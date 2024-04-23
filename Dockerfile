@@ -18,14 +18,14 @@ RUN pip install -e .
 
 WORKDIR /
 
-ADD requirements.txt requirements.txt
+COPY requirements.txt requirements.txt
 RUN pip3 install -r requirements.txt
 
 # Add your model weight files 
-ADD download.py .
+COPY download.py .
 RUN python3 download.py
 
-ADD . .
+COPY . .
 
 EXPOSE 8000
 
