@@ -4,7 +4,7 @@ FROM pytorch/pytorch:1.11.0-cuda11.3-cudnn8-runtime
 WORKDIR /
 
 # Install git and wget
-RUN apt-get update && apt-get install -y git wget \
+RUN apt-get update && apt-get install --no-install-recommends -y git wget \
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/*
 
