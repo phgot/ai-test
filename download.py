@@ -1,4 +1,3 @@
-from transformers import AutoTokenizer
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
 def download_model() -> tuple:
