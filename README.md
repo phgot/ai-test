@@ -1,4 +1,4 @@
-![](https://www.banana.dev/lib_zOkYpJoyYVcAamDf/x2p804nk9qvjb1vg.svg?w=340 "Banana.dev")
+![banana dev](https://www.banana.dev/lib_zOkYpJoyYVcAamDf/x2p804nk9qvjb1vg.svg?w=340 "Banana.dev")
 
 # Banana.dev mistral-7b-instruct-v0.1 starter template
 
