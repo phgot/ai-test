@@ -6,6 +6,6 @@ def download_model() -> tuple:
     tokenizer = AutoTokenizer.from_pretrained("mistralai/Mistral-7B-Instruct-v0.1")
     return model, tokenizer
 
+
 if __name__ == "__main__":
     download_model()
-
