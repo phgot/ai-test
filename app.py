@@ -14,6 +14,7 @@ def init() -> dict:
     }
     return context
 
+
 @app.handler("/")
 def handler(context: dict, request: Request) -> Response:
     """Handle a request to generate text from a prompt."""
@@ -30,6 +31,7 @@ def handler(context: dict, request: Request) -> Response:
     decoded = tokenizer.batch_decode(generated_ids)
     result = decoded[0]
     return Response(json={"outputs": result}, status=200)
+
 
 if __name__ == "__main__":
     app.serve()
